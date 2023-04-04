@@ -10,9 +10,9 @@ const config: GatsbyConfig = {
     // You can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-cara/gatsby-config.mjs
     siteTitle: `Cara`,
-    siteTitleAlt: `Cara - Gatsby Starter Portfolio`,
-    siteHeadline: `Cara - Gatsby Theme from @lekoarts`,
-    siteUrl: `https://cara.lekoarts.de`,
+    siteTitleAlt: `Miguel - Portfolio`,
+    siteHeadline: `Miguel - Portfolio`,
+    siteUrl: `https://elc1090.github.io/project1-emiliopedrollo/`,
     pathPrefix: `${process.env.PATH_PREFIX || "/"}`,
     siteDescription: `Playful and Colorful One-Page portfolio featuring Parallax effects and animations`,
     siteImage: `/banner.jpg`,
