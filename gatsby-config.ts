@@ -4,6 +4,7 @@ import "dotenv/config"
 const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 
 const config: GatsbyConfig = {
+  pathPrefix: `${process.env.PATH_PREFIX || "/"}`,
   siteMetadata: {
     // You can overwrite values here that are used for the SEO component
     // You can also add new values here to query them like usual
@@ -12,6 +13,7 @@ const config: GatsbyConfig = {
     siteTitleAlt: `Cara - Gatsby Starter Portfolio`,
     siteHeadline: `Cara - Gatsby Theme from @lekoarts`,
     siteUrl: `https://cara.lekoarts.de`,
+    pathPrefix: `${process.env.PATH_PREFIX || "/"}`,
     siteDescription: `Playful and Colorful One-Page portfolio featuring Parallax effects and animations`,
     siteImage: `/banner.jpg`,
     siteLanguage: `en`,
@@ -30,7 +32,7 @@ const config: GatsbyConfig = {
         name: `Cara - @lekoarts/gatsby-theme-cara`,
         short_name: `Cara`,
         description: `Playful and Colorful One-Page portfolio featuring Parallax effects and animations`,
-        start_url: `/`,
+        start_url: `${process.env.PATH_PREFIX || "/"}`,
         background_color: `#141821`,
         // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/
